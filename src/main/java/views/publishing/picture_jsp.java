@@ -1,10 +1,10 @@
-package views;
+package views.publishing;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class picture_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -41,8 +41,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Cruzeiras</title>\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n\t<link href=\"//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css\" rel=\"stylesheet\" media=\"screen\">\n\n\t<style type=\"text/css\">\n      body {\n        padding-top: 40px;\n        padding-bottom: 40px;\n        background-color: #f5f5f5;\n      }\n    </style>\n</head>\n<body>\n<div class=\"container\">\n\n<form class=\"form-horizontal\" method=\"post\" action=\"/home\">\n\t<div class=\"control-group\">\n\t  <label class=\"control-label\" for=\"inputEmail\">Email</label>\n\t  <div class=\"controls\">\n\t    <input type=\"text\" id=\"inputEmail\" name=\"email\" placeholder=\"Email\">\n\t  </div>\n\t</div>\n\t<div class=\"control-group\">\n\t  <label class=\"control-label\" for=\"inputPassword\">Password</label>\n\t  <div class=\"controls\">\n\t    <input type=\"password\" id=\"inputPassword\" name=\"password\" placeholder=\"Password\">\n\t  </div>\n\t</div>\n\t<div class=\"control-group\">\n\t  <div class=\"controls\">\n\t    <label class=\"checkbox\">\n");
-      out.write("\t      <input type=\"checkbox\"> Remember me\n\t    </label>\n\t    <button type=\"submit\" class=\"btn\">Sign in</button>\n\t  </div>\n   </div>\n</form>\n\n</div>\n\n</body>\n</html>");
+      out.write("<div class=\"well\" style=\"max-width: 400px; margin: 0 auto 10px;\">\n\t<form id=\"file-input-form\" action=\"/pictureupload\" enctype=\"multipart/form-data\" method=\"post\">\n\t\t<input id=\"file-input\" type=\"file\" name=\"datafile\" size=\"40\" style=\"display:none\">\n\t    <button id=\"upload-button\" type=\"button\" class=\"btn btn-large btn-block btn-success\">Upload</button>\n\t</form>\n</div>\n\n<script type=\"text/javascript\">\n\t$(document).ready(function() {\n\t\t$(\"#upload-button\").click(function() {\n\t\t\t$(\"#file-input\").click()\n\t\t})\n\t\t$(\"#file-input\").change(function() {\n\t\t\t$(\"#file-input-form\").submit()\t\t\n\t\t})\n\t})\n</script>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
