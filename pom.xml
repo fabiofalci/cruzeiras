@@ -64,7 +64,6 @@
 
 	<build>
 		<plugins>
-		    <!--
 			<plugin>
 				<groupId>org.cruzeira</groupId>
 				<artifactId>cruzeira-maven-plugin</artifactId>
@@ -85,7 +84,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			-->
 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
