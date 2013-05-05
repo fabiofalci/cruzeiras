@@ -1,1 +1,1 @@
-mvn compile exec:exec
+web: mvn compile exec:exec
