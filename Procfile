@@ -1,1 +1,1 @@
-web: mvn compile exec:exec
+web: java -cp 'target/*:target/lib/*' org.cruzeira.netty.NettyServer
