@@ -20,6 +20,14 @@
 		</repository>
 	</repositories>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.cruzeira</groupId>
@@ -65,7 +73,6 @@
 
 	<build>
 		<plugins>
-		    <!--
 			<plugin>
 				<groupId>org.cruzeira</groupId>
 				<artifactId>cruzeira-maven-plugin</artifactId>
@@ -86,8 +93,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			-->
-				
+
 			<plugin>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
