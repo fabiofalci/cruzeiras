@@ -13,5 +13,9 @@
 		$("#file-input").change(function() {
 			$("#file-input-form").submit()		
 		})
+		$('#file-input-form').submit(function() {
+			$(this).ajaxSubmit()
+			return false
+        })
 	})
 </script>

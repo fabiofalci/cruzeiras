@@ -16,4 +16,11 @@ public class Authenticator {
 		return "work";
 	}
 	
+	@RequestMapping(value = "/logout") 
+	public String logout() {
+		logger.info("Logout");
+		return "index";
+	}
+	
+	
 }

@@ -1,0 +1,5 @@
+# Uses these commands to install cruzeira into cruzeiras local repository
+
+mvn deploy:deploy-file -Durl=file:///your/path/cruzeiras/repo/ -Dfile=/your/path/cruzeira/cruzeira/target/cruzeira-0.1-SNAPSHOT.jar -DpomFile=/your/path/cruzeira/cruzeira/pom.xml
+
+mvn deploy:deploy-file -Durl=file:///your/path/cruzeiras/repo/ -Dfile=/your/path/cruzeira/cruzeira-plugin/target/cruzeira-maven-plugin-0.1-SNAPSHOT.jar -DpomFile=/your/path/cruzeira/cruzeira-plugin/pom.xml
