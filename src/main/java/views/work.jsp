@@ -25,15 +25,14 @@
 				<li class="nav-header">Publish</li>
 				<li><a href="#/publish-picture">Picture</a></li>
 				<li class="nav-header">Friends</li>
-				<li><a href="#">Groups</a></li>
+				<li><a href="#/groups">Groups</a></li>
 				<li class="nav-header">Settings</li>
 				<li><a href="#">Information</a></li>
 				<li><a href="#">Privacy</a></li>
 			</ul>
 		</div>
 
-		<div id="content" class="span8">
-			content
+		<div id="content" crclass="span8">
 		</div>
 
 	</div>

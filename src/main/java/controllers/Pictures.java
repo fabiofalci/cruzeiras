@@ -19,6 +19,7 @@ public class Pictures {
 	@RequestMapping("/pictureupload")
 	public String upload(@RequestParam("datafile") byte[] datafile) {
 		logger.info("Upload {} bytes", datafile != null ? datafile.length : 0);
+		System.out.println("test");
 		return "/publishing/picture";
 	}
 	

@@ -4,6 +4,10 @@ var app = Sammy('#content', function() {
     	this.partial('/publish/picture')
     })
 
+    this.get('#/groups', function() {
+    	this.$element().html("<span class='label label-success'>Groups!</span>")
+    })
+
 });
 
 jQuery(function() {

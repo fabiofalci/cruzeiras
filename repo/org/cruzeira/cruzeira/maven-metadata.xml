@@ -3,10 +3,9 @@
   <groupId>org.cruzeira</groupId>
   <artifactId>cruzeira</artifactId>
   <versioning>
-    <release>0.1</release>
     <versions>
-      <version>0.1</version>
+      <version>0.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20130505182002</lastUpdated>
+    <lastUpdated>20130508203146</lastUpdated>
   </versioning>
 </metadata>
