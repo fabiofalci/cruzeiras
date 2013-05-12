@@ -28,7 +28,7 @@
 				<li class="nav-header">Friends</li>
 				<li><a href="#/groups">Groups</a></li>
 				<li class="nav-header">Settings</li>
-				<li><a href="#">Information</a></li>
+				<li><a href="#/information">Information</a></li>
 				<li><a href="#">Privacy</a></li>
 				<li><a href="logout">Logout</a></li>
 			</ul>
